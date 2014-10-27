@@ -7,6 +7,19 @@
     <title>Test for the front end</title>
     <style type="text/css">
 
+
+      html,body{
+        margin:0px;
+        padding:0px;
+      }
+      #test{
+        float:left;
+        color: #eee;
+        background-color: #008000;
+        width: 100%;
+        height: 50px;
+        padding: 20px;
+      }
       .rack{
         float:left;
         width: 400px;
@@ -35,6 +48,14 @@
         padding-left: 15px;
         padding-top: 15px;
         overflow:scroll;
+      }
+      .info{
+        float: left;
+        width: 100%;
+        height: 200px;
+        color: #eee;
+        background-color: #222;
+        padding: 10px;
       }
     </style>
     <script>
@@ -73,7 +94,7 @@
   </head>
   <body>
 
-    <div id="test">Hello Server</div>
+    <div id="test">Racks and Servers</div>
 
     <div class="rack">
       <div id="rackinner1">
@@ -91,6 +112,10 @@
     <div class="rack">
       <div id="rackinner2" ondrop="drop(event)" ondragover="allowDrop(event)">
       </div>
+    </div>
+
+    <div class="info">
+      System info goes here
     </div>
   </body>
 </html>
